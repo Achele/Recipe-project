@@ -8,22 +8,52 @@
     <style>
       .container {
         display: flex;
+        align-items: center;
+        justify-content: space-around;
       }
       .efo {
-        margin: 1em;
+        /* padding: 1em; */
+        /* margin: 1em; */
       }
-      .efo > img {
-        width: 100%;
+
+      .efo-img {
+        border: 2px solid;
+        padding: 1em;
+        border-radius: 0.3em;
+        width: 200px;
+        /* height: 100vh; */
       }
-      img {
-        width: 100%;
-        height: auto;
+      #main-img {
+        max-width: 100%;
+        width: 500px;
+        height: 500px;
+      }
+      /* body{
+       padding: 2em;
+      } */
+      header {
+        background-color: #004747;
+        color: white;
+        text-align: center;
+        padding: 1em 0;
+      }
+      h3,
+      th {
+        color: #004747;
+        font-weight: bolder;
       }
     </style>
   </head>
   <body>
-    <h1>My Favourite Meal</h1>
-    <img src="images/efo.jpeg" alt="A bowl of Efo riro" />
+    <header>
+      <h1>My Favourite Meal</h1>
+    </header>
+
+    <figure>
+      <img src="images/efo.jpeg" alt="A bowl of Efo riro" id="main-img" />
+      <figcaption>A bowl of Efo Riro</figcaption>
+    </figure>
+
     <h2>Efo Riro</h2>
     <p>
       This rich vegetable soup is native to the Yoruba people of South-Western
@@ -138,19 +168,47 @@
       <li>
         Add the washed vegetables, combine thoroughly Switch off the heat at
         this time, leave to simmer for a further 5 minutes with the residual
-        heat and it’s ready.
+        heat and its ready.
       </li>
     </ol>
     <h3>Different ways you can have Efo riro</h3>
     <div class="container">
       <div class="efo">
-        <img src="images/efo3.jpeg" alt="efo riro with semo" />
-        <img src="images/efo rice.jpeg" alt="Efo riro with rice" />
+        <figure>
+          <img
+            class="efo-img"
+            src="images/efo3.jpeg"
+            alt="efo riro with semo"
+          />
+          <figcaption>Efo Riro with semo</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="efo-img"
+            src="images/efo rice.jpeg"
+            alt="Efo riro with rice"
+          />
+          <figcaption>Efo Riro with rice</figcaption>
+        </figure>
       </div>
 
       <div class="efo">
-        <img src="images/efo plantain.jpeg" alt="Efo riro with plantain" />
-        <img src="images/efo yam.jpeg" alt="efo riro with yam" />
+        <figure>
+          <img
+            class="efo-img"
+            src="images/efo plantain.jpeg"
+            alt="Efo riro with plantain"
+          />
+          <figcaption>Efo Riro with plantain</figcaption>
+        </figure>
+        <figure>
+          <img
+            class="efo-img"
+            src="images/efo yam.jpeg"
+            alt="efo riro with yam"
+          />
+          <figcaption>Efo Riro with yam</figcaption>
+        </figure>
       </div>
     </div>
   </body>
